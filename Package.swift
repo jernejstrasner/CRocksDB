@@ -4,5 +4,8 @@ import PackageDescription
 
 let package = Package(
     name: "CRocksDB",
-    pkgConfig: "rocksdb"
+    pkgConfig: "rocksdb",
+    providers: [
+        .brew(["rocksdb"])
+    ]
 )
